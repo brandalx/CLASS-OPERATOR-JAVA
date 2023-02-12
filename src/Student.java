@@ -26,11 +26,5 @@ public class Student {
 
         return true;
     }
-public boolean updateSubject (String oldSubject, String newSubject) {
-        
-}
-
-
-
-
+//this is checked
 }
