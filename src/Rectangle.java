@@ -45,9 +45,6 @@ public class Rectangle {
 
     public void show (){
 
-
-
-
         for (int i = 0; i < this.height; i++) {
             for (int j = 0; j < this.width; j++) {
                 System.out.print("* ");
@@ -57,11 +54,6 @@ public class Rectangle {
 
         System.out.println(" Width is " +this.width);
         System.out.println(" Height is " +this.height);
-
-
-
-
-
 
     }
 
