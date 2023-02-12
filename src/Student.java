@@ -1,30 +1,14 @@
 public class Student {
     private String name;
-    private String[] subjects;
-    private int numOfSubject;
+    private Adress homeAdress;
+    private Adress schoolAdress;
 
-    public Student(String newName, int maxSubjects) {
-        name = newName;
-        subjects = new String[maxSubjects];
-        numOfSubject = 0;
-
+    public Student (String name, Adress homeAdress, Adress schoolAdress) {
+        this.name = name;
+        setHomeAdress(homeAdress);
+        setSchoolAdress(schoolAdress);
     }
-
-    public Student(Student other) {
-        name = other.name;
-        subjects = new String[other.subjects.length];
-        numOfSubject = other.numOfSubject;
-        for (int i = 0; i < other.numOfSubject; i++) {
-            subjects[i] = other.subjects[i];
-
-        }
-    }
-    public boolean addSubject (String newSubject) {
-        if(numOfSubject == subjects.length)
-            return false;
-        subjects[numOfSubject ++] = newSubject;
-
-        return true;
-    }
+    public void setHomeAdress(Adress homeAdress) {this.homeAdress = new Adress(homeAdress);}
+    public void setSchoolAdress(Adress schoolAdress){this.schoolAdress = schoolAdress;}
 
 }
